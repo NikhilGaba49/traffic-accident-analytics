@@ -18,6 +18,21 @@ def categorise_time_of_day(time):
         return "Afternoon"
     return "Evening"
 
+# Filter the original dataset to find the accident count for a given time of day, for the specified days
+def accidents_by_day(time_of_day):
+    accidents_filtered = accidents.loc[accidents['TIME_OF_DAY'] == time_of_day]
+    accidents_count_by_day = accidents_filtered.groupby('DAY_WEEK_DESC')['ACCIDENT_NO'].count()
+    return accidents_count_by_day[days]
+
+# Find the cumulative accident count for each specified day, up until a given time of day
+def add_series(time_of_day1, time_of_day2, *day_times):
+    sum_series = accidents_by_day(time_of_day1) + accidents_by_day(time_of_day2)
+
+    # if further times of day need to be added, add them to the above series
+    for time_day in day_times:
+        sum_series += accidents_by_day(time_day)
+    return sum_series
+
 # A function to generate a bar chart to show accidents by (categorised) time of day
 def number_accidents_by_time_of_day ():
         # Categorise each accidents' time by the time of day (Morning, Afternoon, etc.)
@@ -32,6 +47,8 @@ def number_accidents_by_time_of_day ():
     plt.title("Frequency of Accidents by Time of Day")
     plt.savefig('task2_2_timeofday.png')
     plt.close()
+
+    return 
 
 # A plot comprising of 4 pie charts describing key terms in accident descriptions for each time of day (morning, afternoon, evening, late night)
 def accident_terms_by_time ():
@@ -54,3 +71,26 @@ def accident_terms_by_time ():
 
     plt.savefig("task2_2_wordpies.png")
     plt.close()
+
+    return
+
+# This function makes stacked bar chart for cumulative accident count across the day for each of Monday, Wednesday & Friday
+def stacked_bar_chart_accident_count ():
+
+        # Creating a stacked bar chart, adapted from tutorial from Geeks for Geeks
+    # the X-axis is the given days, with the accident count up until a given time
+    # of day stacked on top of each other
+    plt.bar(days, accidents_by_day("Late Night"), color = 'c')
+    plt.bar(days, accidents_by_day("Morning"), bottom = accidents_by_day("Late Night"), color = 'coral')
+    plt.bar(days, accidents_by_day("Afternoon"), bottom = add_series("Late Night", "Morning"), color = 'y')
+    plt.bar(days, accidents_by_day("Evening"), bottom = add_series("Late Night", "Morning", "Afternoon"), 
+            color = 'palevioletred')
+
+    plt.title("Accident Counts by Day and Time of Day")
+    plt.xlabel("Day")
+    plt.ylabel("Accident Count")
+    plt.legend(['Late Night', 'Morning', 'Afternoon', 'Evening'])
+    plt.savefig('task2_2_stackbar.png')
+    plt.close()
+
+    return
