@@ -26,13 +26,13 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
   - Preprocessed accident descriptions (case-folding, stopword removal, tokenization).
   - Identified top **20 frequent accident-related terms** using Bag-of-Words.
   - **Word cloud visualization:**  
-    ![Accident Word Cloud](task2_1_word_cloud.png)
+    ![Accident Word Cloud](visuals/word_cloud_feature_words.png)
 - **Accident Timing Patterns:**
   - Categorized into `Morning`, `Afternoon`, `Evening`, `Late Night`.
   - **Bar chart:** Accident counts by time of day.  
-    ![Accidents by Time of Day](task2_2_timeofday.png)
+    ![Accidents by Time of Day](visuals/task2_2_timeofday.png)
   - **Pie charts:** Frequent accident terms by time of day.  
-    ![Accident Terms by Time](task2_2_wordpies.png)
+    ![Accident Terms by Time](visuals/task2_2_wordpies.png)
   - **Stacked bar chart:** Accident counts across Monday, Friday, and Sunday segmented by time of day.  
     ![Accident Count by Day & Time](task2_2_stackbar.png)
 
