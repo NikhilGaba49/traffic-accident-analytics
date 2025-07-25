@@ -13,7 +13,7 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
   - Age-group binning (`Under 16`, `17-25`, `26-39`, `40-64`, `65+`).
 - **Visual Insights:**
   - **Seatbelt use by age groups:**  
-    ![Seatbelt Age Groups](task1_2_age.png)
+![Seatbelt Age Groups](visuals/task1_2_age.png)
   - **Drivers vs Passengers seatbelt use:**  
     ![Driver vs Passenger Seatbelt Use](task1_2_driver.png)
   - **Front-seat vs Rear-seat passenger seatbelt use:**  
