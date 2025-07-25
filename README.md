@@ -4,6 +4,28 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
 
 ---
 
+
+## Skills & Techniques Demonstrated
+
+### Data Cleaning & Preprocessing
+- Mode imputation, one-hot encoding, age-group binning.
+- Regex-based feature extraction (`AGE_GROUP`, `SEATING_POSITION`, `ACCIDENT_TIME`).
+- Text preprocessing (tokenization, stopword removal, Bag-of-Words).
+
+### Exploratory Data Analysis & Visualization
+- Bar, pie, scatter, and stacked bar charts using `Matplotlib`.
+- Word cloud generation for accident causes.
+- Grouped aggregations & cross-tabulations using `Pandas`.
+
+### Statistical & Machine Learning Techniques
+- Frequency analysis of categorical variables.
+- K-Means clustering with **Min-Max scaling** and **Elbow Method**.
+
+### Python Libraries
+`pandas`, `matplotlib`, `nltk`, `scikit-learn`, `wordcloud`, `re`
+
+---
+
 ## 📌 Key Objectives & Insights
 
 
@@ -52,28 +74,7 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
 
 ---
 
-## 🛠 Skills & Techniques Demonstrated
-
-### Data Cleaning & Preprocessing
-- Mode imputation, one-hot encoding, age-group binning.
-- Regex-based feature extraction (`AGE_GROUP`, `SEATING_POSITION`, `ACCIDENT_TIME`).
-- Text preprocessing (tokenization, stopword removal, Bag-of-Words).
-
-### Exploratory Data Analysis & Visualization
-- Bar, pie, scatter, and stacked bar charts using `Matplotlib`.
-- Word cloud generation for accident causes.
-- Grouped aggregations & cross-tabulations using `Pandas`.
-
-### Statistical & Machine Learning Techniques
-- Frequency analysis of categorical variables.
-- K-Means clustering with **Min-Max scaling** and **Elbow Method**.
-
-### Python Libraries
-`pandas`, `matplotlib`, `nltk`, `scikit-learn`, `wordcloud`, `re`
-
----
-
-## 🚀 How to Run
+## How to Run
 
 1. Place all CSVs (`person.csv`, `accident.csv`, `filtered_vehicle.csv`) in the `/course/` directory.
 2. Install dependencies:
