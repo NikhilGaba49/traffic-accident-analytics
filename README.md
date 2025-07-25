@@ -73,6 +73,19 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
     ![Front vs Rear Seatbelt Use](visuals/task1_2_seat.png)
 
 ---
+## Key Insights from Data Analysis
+
+- **Vehicle Clustering:** Using k-means clustering on vehicle attributes, we identified distinct groups—lightweight cars, mid-sized vehicles, and buses—with differing crash frequencies, reflecting how vehicle type relates to accident risk.
+
+- **Accident Timing:** Analysis of accident data by time of day and day of week revealed peak crash periods (e.g., Friday afternoons/evenings, weekday rush hours) linked to factors like fatigue, traffic volume, and risky behaviors.
+
+- **Text Mining of Accident Reports:** Frequent accident terms vary by time of day, highlighting common crash scenarios such as intersection incidents during rush hours and visibility-related crashes at night.
+
+- **Seatbelt Use Patterns:** Younger (17–25) and middle-aged (40–64) groups showed higher rates of seatbelt non-compliance. Rear-seat passengers were the riskiest group overall, with significantly lower seatbelt usage than drivers or front-seat passengers.
+
+These findings demonstrate proficiency in data cleaning, clustering, visualization, text processing, and deriving actionable insights from complex datasets.
+
+---
 
 ## How to Run
 
