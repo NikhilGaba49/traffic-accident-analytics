@@ -34,7 +34,7 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
   - **Pie charts:** Frequent accident terms by time of day.  
     ![Accident Terms by Time](visuals/task2_2_wordpies.png)
   - **Stacked bar chart:** Accident counts across Monday, Friday, and Sunday segmented by time of day.  
-    ![Accident Count by Day & Time](task2_2_stackbar.png)
+    ![Accident Count by Day & Time](visuals/task2_2_stackbar.png)
 
 ---
 
@@ -42,14 +42,12 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
 - **Crash Count Trends:**
   - Grouped by **year, body style, and manufacturer**.
   - **Scatter plot:** Crash counts vs vehicle manufacture year.  
-    ![Crash Counts Scatter](task3_1_scatter.png)
+    ![Crash Counts Scatter](visuals/scatter_plot_unique_combination.png)
 - **Clustering of Vehicle Features:**
   - Features: wheels, cylinders, seating capacity, tare weight, and occupants.
   - **Optimal clusters (k=3)** determined via the **Elbow Method**.  
-    ![Elbow Plot](task3_2_elbow.png)
-  - **Clustered scatter plot:** Crash counts colored by risk clusters.  
-    ![Clustered Crash Scatter](task3_3_scattercolour.png)
-  - Exported **Top 10 crash-prone vehicle groups per cluster** (`task3_3_cluster*.csv`).
+    ![Elbow Plot](visuals/elbow_method.png)
+  - Exported **Top 10 crash-prone vehicle groups per cluster** (`cluster0.csv`).
 
 ---
 
