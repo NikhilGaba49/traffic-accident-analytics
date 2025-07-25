@@ -6,22 +6,21 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
 
 ## 📌 Key Objectives & Insights
 
-### ✅ 1. Seatbelt Usage Analysis
-- **Data Cleaning & Encoding:**
-  - Mode imputation for missing values.
-  - One-hot encoding for gender and road user type.
-  - Age-group binning (`Under 16`, `17-25`, `26-39`, `40-64`, `65+`).
-- **Visual Insights:**
-  - **Seatbelt use by age groups:**  
-![Seatbelt Age Groups](visuals/task1_2_age.png)
-  - **Drivers vs Passengers seatbelt use:**  
-    ![Driver vs Passenger Seatbelt Use](visuals/task1_2_driver.png)
-  - **Front-seat vs Rear-seat passenger seatbelt use:**  
-    ![Front vs Rear Seatbelt Use](visuals/task1_2_seat.png)
+
+### 1. Vehicle Crash Patterns & Clustering
+- **Crash Count Trends:**
+  - Grouped by **year, body style, and manufacturer**.
+  - **Scatter plot:** Crash counts vs vehicle manufacture year.  
+    ![Crash Counts Scatter](visuals/scatter_plot_unique_combination.png)
+- **Clustering of Vehicle Features:**
+  - Features: wheels, cylinders, seating capacity, tare weight, and occupants.
+  - **Optimal clusters (k=3)** determined via the **Elbow Method**.  
+    ![Elbow Plot](visuals/elbow_method.png)
+  - Exported **Top 10 crash-prone vehicle groups per cluster** (`cluster0.csv`).
 
 ---
 
-### ✅ 2. Accident Causes & Time-of-Day Patterns
+### 2. Accident Causes & Time-of-Day Patterns
 - **Text Mining:**
   - Preprocessed accident descriptions (case-folding, stopword removal, tokenization).
   - Identified top **20 frequent accident-related terms** using Bag-of-Words.
@@ -38,16 +37,18 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
 
 ---
 
-### ✅ 3. Vehicle Crash Patterns & Clustering
-- **Crash Count Trends:**
-  - Grouped by **year, body style, and manufacturer**.
-  - **Scatter plot:** Crash counts vs vehicle manufacture year.  
-    ![Crash Counts Scatter](visuals/scatter_plot_unique_combination.png)
-- **Clustering of Vehicle Features:**
-  - Features: wheels, cylinders, seating capacity, tare weight, and occupants.
-  - **Optimal clusters (k=3)** determined via the **Elbow Method**.  
-    ![Elbow Plot](visuals/elbow_method.png)
-  - Exported **Top 10 crash-prone vehicle groups per cluster** (`cluster0.csv`).
+### 3. Seatbelt Usage Analysis
+- **Data Cleaning & Encoding:**
+  - Mode imputation for missing values.
+  - One-hot encoding for gender and road user type.
+  - Age-group binning (`Under 16`, `17-25`, `26-39`, `40-64`, `65+`).
+- **Visual Insights:**
+  - **Seatbelt use by age groups:**  
+![Seatbelt Age Groups](visuals/task1_2_age.png)
+  - **Drivers vs Passengers seatbelt use:**  
+    ![Driver vs Passenger Seatbelt Use](visuals/task1_2_driver.png)
+  - **Front-seat vs Rear-seat passenger seatbelt use:**  
+    ![Front vs Rear Seatbelt Use](visuals/task1_2_seat.png)
 
 ---
 
