@@ -15,9 +15,9 @@ This project applies **data processing, exploratory data analysis (EDA), text mi
   - **Seatbelt use by age groups:**  
 ![Seatbelt Age Groups](visuals/task1_2_age.png)
   - **Drivers vs Passengers seatbelt use:**  
-    ![Driver vs Passenger Seatbelt Use](task1_2_driver.png)
+    ![Driver vs Passenger Seatbelt Use](visuals/task1_2_driver.png)
   - **Front-seat vs Rear-seat passenger seatbelt use:**  
-    ![Front vs Rear Seatbelt Use](task1_2_seat.png)
+    ![Front vs Rear Seatbelt Use](visuals/task1_2_seat.png)
 
 ---
 
