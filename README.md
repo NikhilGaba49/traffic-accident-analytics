@@ -1,5 +1,5 @@
 # Traffic Accident Analytics & Crash Pattern Insights
-
+ 
 This project applies **data processing, exploratory data analysis (EDA), text mining, and clustering** to uncover insights from traffic accident datasets. Using Python, it analyzes **seatbelt usage behavior**, **frequent accident causes**, **accident timing patterns**, and **vehicle crash characteristics**.
 
 ---
